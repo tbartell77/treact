@@ -40,6 +40,12 @@ img {
     width: 100%;
 }
 
+h1 {
+    font-size: 48px;
+    color: #1a202c;
+    line-height: 1.25;
+}
+
 a {
     display: inline;
     text-decoration: none;
@@ -199,6 +205,17 @@ nav {
     margin-left: 12px;
     letter-spacing: 0.6px;
     padding-bottom: 2px;
+}
+
+.btn__menu {
+    display: none;
+    background: transparent;
+    border: none;
+    transition: all 300ms ease;
+}
+
+.btn__menu--svg:hover {
+    filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
 }
 
 /* 
@@ -1143,4 +1160,38 @@ footer {
     transform: translateX(120px) translateY(195px);
     z-index: 1;
     opacity: 0.5;
+}
+
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .header__description--para {
+        font-size: 16px;
+    }
+
+    .header__img--wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header__img {
+        max-width: 512px;
+    }
+
+    header .row {
+        align-items: flex-end;
+    }
+
+    .header__customers {
+        padding-right: 64px;
+    }
+
+    .plan__button {
+        max-width: none;
+    }
+
+    .plan__bottom {
+        padding: 32px 64px;
+    }
 }
